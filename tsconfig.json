@@ -6,19 +6,18 @@
   "compilerOptions": {
      "target": "es2016",
     "module": "nodenext",
-    // "moduleResolution": "nodenext",
-    // File Layout
-    // "rootDir": "./src",
-    // "esModuleInterop": true,
-    "outDir": "./dist",
-    "emitDeclarationOnly":true,
 
-    // "types": [],
+    // "moduleResolution": "nodenext",
+    // "rootDir": "./",
+
+    "outDir": "./dist",
+    "emitDeclarationOnly": true,
+
 
     // For nodejs:
     "lib": ["esnext"],
     "types": ["node"],
-    // and npm install -D @types/node
+    // "typeRoots": ["./src/types", "./node_modules/@types"],
 
     // Other Outputs
     "sourceMap": true,

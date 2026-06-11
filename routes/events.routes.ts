@@ -115,7 +115,7 @@ router.put("/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
   try {
     const eventId = Number(req.params.id);
-
+    await prisma.reservation.deleteMany({where: { eventId : eventId },});
     await prisma.event.delete({
       where: { id: eventId },
     });
